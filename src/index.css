@@ -1,0 +1,55 @@
+
+html{
+  background-color: #000000;
+}
+/* public/css/styles.css */
+.App {
+  text-align: center;
+  background-color: #000000; /* Set background color */
+  color: #ffffff; /* Optional: Set text color to white for contrast */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+/* public/css/styles.css */
+/* public/css/styles.css */
+.carousel-item {
+  position: relative; /* Necessary for overlay positioning */
+}
+/* src/App.css */
+
+@media (max-width: 768px) {
+  .movie-carousel {
+    display: none; /* Hide the movie carousel on mobile */
+  }
+  
+
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  filter: blur(5px); /* Blur effect */
+  z-index: 1; /* Ensure overlay is above the image */
+}
+
+.carousel-caption {
+  position: relative; /* Position relative to allow layering */
+  z-index: 2; /* Caption should be above the overlay */
+  color: white; /* Make text white for better visibility */
+}
+/* CSS to hide the carousel arrow buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  color: transparent;
+}
